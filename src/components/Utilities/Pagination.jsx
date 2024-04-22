@@ -17,17 +17,29 @@ const Pagination = ({ currentPage, lastVisiblePage, setPage }) => {
     }
 
     return (
-        <div className="flex justify-center item-center py-4 p-2 gap-4 text-color-primary text-2xl">
-            { currentPage <= 1 ? null :
-                <button onClick={handlePrevPage} className="transition-all hover:text-color-accent">prev</button>
-            }
+      <div className="flex justify-center item-center py-4 p-2 gap-4  text-xl">
+        {currentPage <= 1 ? null : (
+          <button
+            onClick={handlePrevPage}
+            className="text-color-primary transition-all hover:font-bold bg-color-accent rounded px-2"
+          >
+            {"<"}
+          </button>
+        )}
 
-            <p>{currentPage} of {lastVisiblePage}</p>
+        <p className="text-color-secondary">
+          {currentPage} of {lastVisiblePage}
+        </p>
 
-            { currentPage >= lastVisiblePage ? null :
-            <button onClick={handleNextPage} className="transition-all hover:text-color-accent">next</button>
-            }
-        </div>
-    )
+        {currentPage >= lastVisiblePage ? null : (
+          <button
+            onClick={handleNextPage}
+            className="text-color-primary transition-all hover:font-bold bg-color-accent rounded px-2"
+          >
+            {">"}
+          </button>
+        )}
+      </div>
+    );
 }
 export default Pagination

@@ -26,11 +26,19 @@ const Page = () => {
     const lastVisiblePage = topAnime.pagination?.last_visible_page;
 
     return (
-        <>
-            <HeaderMenu title={`Anime Terpopuler #${page}`} />
-            <AnimeList api={topAnime} /> {/* Mengirimkan hanya data anime ke AnimeList */}
-            <Pagination setPage={setPage} currentPage={page} lastVisiblePage={lastVisiblePage} />
-        </>
+      <>
+        <HeaderMenu
+          title={`Anime <b>Terpopuler</b> #${page}`}
+          
+        />
+        <AnimeList api={topAnime} />{" "}
+        {/* Mengirimkan hanya data anime ke AnimeList */}
+        <Pagination
+          setPage={setPage}
+          currentPage={page}
+          lastVisiblePage={lastVisiblePage}
+        />
+      </>
     );
 };
 

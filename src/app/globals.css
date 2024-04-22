@@ -23,8 +23,8 @@ img:hover {
    width: 22.4px;
    height: 22.4px;
    border-radius: 50%;
-   background: #ffc639;
-   box-shadow: 0 0 0 0 rgba(255, 198, 57, 0.5); /* Tetap menggunakan opacity */
+   background: #4793AF; /* Ubah warna background */
+   box-shadow: 0 0 0 0 rgba(71, 147, 175, 0.5); /* Tetap menggunakan opacity */
    animation: pulse-kefe91md 1.5s infinite linear;
    position: relative;
 }
@@ -35,7 +35,7 @@ img:hover {
    position: absolute;
    inset: 0;
    border-radius: inherit;
-   box-shadow: 0 0 0 0 rgba(255, 198, 57, 0.5); /* Tetap menggunakan opacity */
+   box-shadow: 0 0 0 0 rgba(71, 147, 175, 0.5); /* Tetap menggunakan opacity */
    animation: inherit;
    animation-delay: -0.5s;
 }
@@ -46,6 +46,7 @@ img:hover {
 
 @keyframes pulse-kefe91md {
    100% {
-      box-shadow: 0 0 0 44.8px rgba(255, 198, 57, 0); /* Warna shadow pada keadaan maksimum */
+      box-shadow: 0 0 0 44.8px rgba(71, 147, 175, 0); /* Warna shadow pada keadaan maksimum */
    }
 }
+

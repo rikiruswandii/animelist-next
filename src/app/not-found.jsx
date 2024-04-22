@@ -7,7 +7,7 @@ const Page = () => {
             <div className='flex justify-center items-center gap-4 text-color-accent flex-col' >
                 <FileSearch size={44} />
                 <h3 className=' font-bold text-2xl'>NOT FOUND! </h3>
-                <Link href="/" className='text-color-primary hover:text-color-accent transition-all underline'>kembali</Link>
+                <Link href="/" className='text-color-accent hover:font-bold transition-all underline'>kembali</Link>
             </div> 
         </div>
     )
