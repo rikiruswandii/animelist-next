@@ -9,20 +9,24 @@ const Page = async () => {
     let recomendedAnime = await getNeastedAnimeResponse("recommendations/anime", "entry")
     recomendedAnime = reproduce(recomendedAnime, 4)
     return (
-    <>
+      <>
         {/* populer */}
         <section>
-            <Header title="Paling Popules" linkHref="/popular" linkTitle="...lihat Semua" /> 
-            <AnimeList api={topAnime} />
+          <Header
+            title="Paling Populer"
+            linkHref="/popular-anime"
+            linkTitle="...lihat Semua"
+          />
+          <AnimeList api={topAnime} name={`anime`} />
         </section>
 
         {/* rekomendasi */}
         <section>
-            <Header title="Rekomendasi" /> 
-            <AnimeList api={recomendedAnime} />
+          <Header title="Rekomendasi" />
+          <AnimeList api={recomendedAnime} name={`anime`} />
         </section>
-    </>
-    )
+      </>
+    );
 }
 
 export default Page

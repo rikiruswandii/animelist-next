@@ -2,14 +2,14 @@ import { FacebookLogo, InstagramLogo } from "@phosphor-icons/react/dist/ssr";
 import Link from "next/link";
 
 
-const Footer = ({mysite}) => {
+const Footer = ({ mysite }) => {
   return (
     <div className="flex md:flex-wrap md:mx-10 mt-6 py-4 border-collapse justify-between items-center border-t border-color-accent border-opacity-10 max-h-20">
       <div className="flex text-color-accent md:text-md text-sm p-4 gap-1 text-nowrap">
         <h3>Dibuat dengan ❤️ oleh</h3>
         <h3
           className=""
-          dangerouslySetInnerHTML={{ __html: mysite.title }}
+          dangerouslySetInnerHTML={{ __html: mysite.styleTitle }}
         ></h3>
         .
       </div>
