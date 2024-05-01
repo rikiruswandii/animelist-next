@@ -2,6 +2,7 @@ import { Montserrat } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import ScrollToTopButton from "@/components/Utilities/ScrollToTop";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -15,6 +16,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${montserrat.className} bg-color-primary`}>
+        <ScrollToTopButton />
         <Navbar metadata={metadata}/>
         {children}
         <Footer mysite={metadata}/>
